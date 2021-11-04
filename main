@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+import os
+def commits(x: int):
+    for i in range(x):
+        
+        os.system(f"git add main")
+        os.system(f"git commit -m='{i}' --date='{i} day ago'")
+    os.system("git push")
+commits(10)
