@@ -8,4 +8,4 @@ def commits(x: int):
         os.system(f"git add data.txt")
         os.system(f"git commit -m='{i}' --date='{i} day ago'")
         os.system("git push")
-commits(2)
+commits(100)
