@@ -1,13 +1,10 @@
 #!/usr/bin/env python
 import os
-# add commit(с датой) push
 def commits(x: int):
-    #  file = open('data.txt',"w")
     for i in range(x):
-        #  file.write("ABOBA: "+str(i))
         os.system(f"echo {i} > data.txt")
         os.system(f"git add data.txt")
         os.system(f"git commit -m='{i}' --date='{i} day ago'")
         os.system("git push")
-    #  file.close()
-commits(100)
+x=int(input("Введите количество коммитов:"))
+commits(x)
