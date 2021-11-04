@@ -1,12 +1,14 @@
 #!/usr/bin/env python
-import os
+import os,random
 # add commit(с датой) push
 def commits(x: int):
     file = open('data.txt',"w")
     for i in range(x):
-        file.write("ABOBA: "+str(i))
-        os.system(f"git add data.txt")
-        os.system(f"git commit -m='{i}' --date='{i} day ago'")
-        os.system("git push")
+        #  file.write("ABOBA: "+str(i))
+        for day in range(1,random.randint(3,20)):# 10 коммитов в день
+            os.system(f"echo {i} > data.txt")
+            os.system(f"git add data.txt")
+            os.system(f"git commit -m='{i}' --date='{i} day ago'")
+            os.system("git push")
     file.close()
 commits(100)
