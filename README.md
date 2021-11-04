@@ -8,7 +8,7 @@ sudo pacman -Sy python git  --noconfirm
 ```
 ### Debian, Ubuntu
 ```bash
-sudo apt intstall python git -y
+sudo apt insttall python git -y
 ```
 ### Termux 
 ```bash
