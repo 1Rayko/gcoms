@@ -4,7 +4,7 @@ import os
 def commits(x: int):
     file = open('data.txt',"w")
     for i in range(x):
-        file.write("ABOBA: "+str(i))))
+        file.write("ABOBA: "+str(i))
         os.system(f"git add data.txt")
         os.system(f"git commit -m='{i}' --date='{i} day ago'")
         os.system("git push")
