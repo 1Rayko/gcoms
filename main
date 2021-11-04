@@ -1,9 +1,11 @@
 #!/usr/bin/env python
-import os
+import os,random
+# add commit(с датой) push
 def commits(x: int):
+    file = open('data.txt',"w")
     for i in range(x):
-        
-        os.system(f"git add main")
+        file.write(str(random.randint(1,10000)))
+        os.system(f"git add data.txt")
         os.system(f"git commit -m='{i}' --date='{i} day ago'")
-    os.system("git push")
-commits(1)
+        os.system("git push")
+commits(2)
