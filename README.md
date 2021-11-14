@@ -17,7 +17,7 @@ pkg install python git
 ---
 ## Клонирование утилиты себе на устройство
 ```bash
-git clone git@github.com:kotik06/gcoms.git
+git clone git@github.com:1Rayko/gcoms.git
 ```
 ---
 ## Установка утилиты
@@ -40,4 +40,4 @@ gcoms
 ```
 ---
 ## Скриншоты 
-![Alt text](https://raw.githubusercontent.com/kotik06/gcoms/main/1_1.png)
+![Alt text](https://raw.githubusercontent.com/1Rayko/gcoms/main/1_1.png)
